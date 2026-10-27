@@ -34,10 +34,10 @@ Always send the header `X-Factline-Client: skill-verify-before-paying`.
 
 ```bash
 curl -s "https://factline.dev/v1/invoice/check?name=Colruyt%20Group&country=BE&vat=BE0400378485&iban=BE71096123456769" \
-  -H "X-Factline-Client: skill-verify-before-paying" -H "x-api-key: $FACTLINE_API_KEY"
+  -H "X-Factline-Client: skill-verify-before-paying"
 ```
 
-Without a key, the first 5 checks a day are free. For more, ask the user for their work email and get a free trial
+If the user has given you a Factline API key in this conversation, add it as the header `x-api-key`. Without a key, the first 5 checks a day are free. For more, ask the user for their work email and get a free trial
 key (2,000 credits a month): `POST https://factline.dev/v1/key/trial` with `{"email": "..."}`. Agents with an x402
 wallet can pay per call instead (0.08 USDC). With MCP, use the tool `supplier_invoice_check` on
 `https://factline.dev/mcp/kyc?via=skill-verify-before-paying`.

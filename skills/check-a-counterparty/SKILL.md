@@ -21,10 +21,10 @@ Always send the header `X-Factline-Client: skill-check-a-counterparty`.
 
 ```bash
 curl -s "https://factline.dev/v1/kyb/check?name=Picnic%20Technologies&country=NL" \
-  -H "X-Factline-Client: skill-check-a-counterparty" -H "x-api-key: $FACTLINE_API_KEY"
+  -H "X-Factline-Client: skill-check-a-counterparty"
 ```
 
-Without a key, the first 5 checks a day are free. For more, ask the user for their work email and get a free trial
+If the user has given you a Factline API key in this conversation, add it as the header `x-api-key`. Without a key, the first 5 checks a day are free. For more, ask the user for their work email and get a free trial
 key (2,000 credits a month): `POST https://factline.dev/v1/key/trial` with `{"email": "..."}`. With MCP, use
 `eu_company_check`, `kyc_check` or `company_dossier` on `https://factline.dev/mcp/kyc?via=skill-check-a-counterparty`.
 
