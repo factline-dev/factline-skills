@@ -32,6 +32,14 @@ npx skills add factline-dev/factline-skills
 
 Or copy the folders in `skills/` into your agent's skills directory (`.claude/skills/`, `.agents/skills/` ...).
 
+## Data
+
+The skills send the inputs of each check (company name or number, VAT, IBAN, a person's name, an email address,
+phone number, wallet, Dutch address or plate, an x402 URL) to the Factline REST API at https://factline.dev, the same
+service as the MCP server. Nothing else leaves the agent. Factline does not store inputs as such; some answers are
+cached for 1 to 30 days, person names and wallets are never cached, and a trial key keeps the email it was issued to.
+Full details: https://factline.dev/privacy
+
 ## Keys and price
 
 The pay guard and the Dutch address and vehicle basics are free. Paid checks: the first 5 calls a day per IP are free,
