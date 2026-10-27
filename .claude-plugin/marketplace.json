@@ -1,6 +1,10 @@
 {
   "name": "factline",
-  "owner": { "name": "Factline", "email": "hello@factline.dev" },
+  "description": "Factline checks for AI agents: invoices before paying, new counterparties, x402 payments, Dutch address and vehicle facts.",
+  "owner": {
+    "name": "Factline",
+    "email": "hello@factline.dev"
+  },
   "plugins": [
     {
       "name": "factline",
