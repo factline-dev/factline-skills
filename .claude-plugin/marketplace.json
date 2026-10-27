@@ -1,0 +1,11 @@
+{
+  "name": "factline",
+  "owner": { "name": "Factline", "email": "hello@factline.dev" },
+  "plugins": [
+    {
+      "name": "factline",
+      "source": "./",
+      "description": "Verify invoices before paying, check counterparties, guard x402 payments, Dutch address and vehicle facts."
+    }
+  ]
+}
