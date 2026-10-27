@@ -20,5 +20,8 @@
     "compliance"
   ],
   "icon": ".claude-plugin/icon.png",
-  "privacyPolicyUrl": "https://factline.dev/privacy"
+  "privacyPolicyUrl": "https://factline.dev/privacy",
+  "supportUrl": "https://factline.dev/support",
+  "termsOfServiceUrl": "https://factline.dev/terms",
+  "documentationUrl": "https://factline.dev/skills"
 }
