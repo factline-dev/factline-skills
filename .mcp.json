@@ -1,5 +1,5 @@
 {
   "mcpServers": {
-    "factline": { "type": "http", "url": "https://factline.dev/mcp/kyc?via=claude-plugin" }
+    "factline": { "type": "http", "url": "https://factline.dev/mcp/claude" }
   }
 }

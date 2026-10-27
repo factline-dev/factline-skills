@@ -17,7 +17,7 @@ answers a signed receipt with a `verify_url` the user can open.
 
 ## Install
 
-**Claude Code** (skills plus the Factline MCP server):
+**Claude Code** (skills plus the free Factline MCP server, the same one as the Claude directory connector):
 
 ```
 /plugin marketplace add factline-dev/factline-skills
