@@ -1,6 +1,6 @@
 {
   "name": "factline",
-  "description": "Factline checks for AI agents: invoices before paying, new counterparties, x402 payments, Dutch address and vehicle facts.",
+  "description": "Factline checks for AI agents: invoices before paying, new counterparties, Chinese suppliers, x402 payments, Dutch address and vehicle facts.",
   "owner": {
     "name": "Factline",
     "email": "hello@factline.dev"
@@ -9,7 +9,7 @@
     {
       "name": "factline",
       "source": "./",
-      "description": "Verify invoices before paying, check counterparties, guard x402 payments, Dutch address and vehicle facts."
+      "description": "Verify invoices before paying, check counterparties, check Chinese suppliers, guard x402 payments, Dutch address and vehicle facts."
     }
   ]
 }

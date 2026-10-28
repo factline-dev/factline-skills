@@ -1,7 +1,7 @@
 {
   "name": "factline",
   "version": "1.0.0",
-  "description": "Checks before you act: verify a supplier invoice before paying, check a new customer or supplier (registers, sanctions, PEP), guard x402 payments, and Dutch address and vehicle facts. Skills plus the Factline MCP server.",
+  "description": "Checks before you act: verify a supplier invoice before paying, check a new customer or supplier (registers, sanctions, PEP), check a Chinese supplier (USCC, Entity List, UFLPA), guard x402 payments, and Dutch address and vehicle facts. Skills plus the Factline MCP server.",
   "author": {
     "name": "Factline",
     "email": "hello@factline.dev",
@@ -15,6 +15,8 @@
     "kyb",
     "sanctions",
     "invoice-fraud",
+    "china",
+    "uflpa",
     "x402",
     "netherlands",
     "compliance"
