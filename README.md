@@ -1,6 +1,6 @@
 # Factline skills
 
-Agent skills (SKILL.md) that make an AI agent check before it acts: before it pays an invoice, onboards a customer,
+Agent skills (SKILL.md) that make an AI agent check before it acts: before it pays an invoice, onboards a customer or a Chinese supplier,
 pays an x402 seller, or answers a question about a Dutch home or car. Each skill is one procedure with one Factline
 call and tells the agent what to do with each verdict.
 
@@ -8,6 +8,7 @@ call and tells the agent what to do with each verdict.
 |---|---|---|
 | [verify-before-paying](skills/verify-before-paying/SKILL.md) | it is about to pay or approve a supplier invoice, or bank details change | `/v1/invoice/check`: pass, review or hold |
 | [check-a-counterparty](skills/check-a-counterparty/SKILL.md) | a new customer, supplier or partner is onboarded | `/v1/kyb/check`, `/v1/kyc/check`: registers, sanctions, PEP |
+| [check-a-chinese-supplier](skills/check-a-chinese-supplier/SKILL.md) | a supplier in China or Hong Kong is paid or onboarded, or a USCC appears | `/v1/china/supplier-check`: USCC, sanctions, Entity List, UFLPA |
 | [before-an-x402-payment](skills/before-an-x402-payment/SKILL.md) | it gets an HTTP 402 challenge and is about to pay | `/v1/pay/guard`: allow, review or deny (free) |
 | [dutch-address-and-vehicle-facts](skills/dutch-address-and-vehicle-facts/SKILL.md) | a Dutch address, postcode or licence plate comes up | `/v1/home/basic`, `/v1/vehicle/basic` and more (free) |
 
