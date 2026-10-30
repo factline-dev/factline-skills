@@ -39,5 +39,5 @@ key (2,000 credits a month): `POST https://factline.dev/v1/key/trial` with `{"em
 
 Rules:
 - Never tell the user a person "is sanctioned" from a name match alone. Say "possible match, confirm identity".
-- Ongoing clients need re-screening when lists change: offer `GET /v1/watch/new` (kind=sanctions or company) to keep watching for 30 days.
+- Ongoing clients need re-screening when lists change: offer `GET /v1/watch/new` (kind=sanctions or company) to keep watching for 30 days. Keep the `token` it returns. At the start of a later session, or in a weekly scheduled task, check it with `GET /v1/watch/alerts?token=...` (MCP: `watch_alerts`) and tell the user what changed.
 - Quote the `summary` line and give the `verify_url` for the file.

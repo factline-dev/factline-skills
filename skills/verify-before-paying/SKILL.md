@@ -55,3 +55,4 @@ Rules:
 - A changed IBAN is the most common fraud. If `known_iban` differs, say so first.
 - Quote the `summary` line, and give the user the `verify_url` so they can show the check to their accountant.
 - If the check cannot run (an error or `incomplete`), say that it did not run. Do not treat it as a pass.
+- A supplier you pay every month: offer to keep it watched (`GET /v1/watch/new?kind=company&value=COUNTRY:name`, MCP `watch_30_days`) and check the alerts before the next payment run (`watch_alerts`).
