@@ -31,6 +31,8 @@ answers a signed receipt with a `verify_url` the user can open.
 npx skills add factline-dev/factline-skills
 ```
 
+**Cursor** (the MCP server only, one click): [Add Factline to Cursor](https://cursor.com/install-mcp?name=factline-kyc&config=eyJ1cmwiOiJodHRwczovL2ZhY3RsaW5lLmRldi9tY3Ava3ljIn0=)
+
 Or copy the folders in `skills/` into your agent's skills directory (`.claude/skills/`, `.agents/skills/` ...).
 
 ## Data
